@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корзина</title>
+    <title>Оформление заказа</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -77,173 +77,153 @@
                 <div class="nav">
                     <a href="home.html">Главная</a>
                     <img src="img/strelka.svg" alt="">
-                    <a href="basket.html" class="nav-active">Корзина</a>
+                    <a href="basket.html">Корзина</a>
+                    <img src="img/strelka.svg" alt="">
+                    <a href="checkout.html" class="nav-active">Оформление заказа</a>
                 </div>
-                <div class="catalog-top">
-                    <div class="catalog-top_title">
-                    Корзина –<span class="catalog-top_title-big"> 3</span><span class="catalog-top_title-small"> товара</span>
-                </div>
-                </div>
-                <div class="basket-wrapper">
-                    <div class="basket-catalog">
-                        <div class="basket-catalog_card">
-                            <img src="img/basket-product.png" alt="">
-                            <div class="basket-catalog_card-info">
-                                <span class="basket-catalog_card-info_title">Эмаль NOVOCOLOR ПФ-115</span>
-                                Код товара: 00020111990
-                                <div class="basket-catalog_card-info_parameters">
-                                    <span class="basket-catalog_card-info_parameters-weight">25 кг</span>
-                                    <span class="basket-catalog_card-info_parameters-color"></span>
-                                    <div class="basket-catalog_card-info_parameters-form">
-                                        <button class="js-quantity-minus">
-                                            <svg width="15" height="2" viewBox="0 0 15 2" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="15" width="2" height="15" transform="rotate(90 15 0)"/>
-                                            </svg>
-                                        </button>
-                                        <input type="text" name="quantity" value="1" class="js-quantity-input" readonly>
-                                        <button class="js-quantity-plus">
-                                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="15" y="7" width="2" height="15" transform="rotate(90 15 7)"/>
-                                                <rect x="8.5" y="15.5" width="2" height="15" transform="rotate(-180 8.5 15.5)"/>
-                                            </svg>
-                                        </button>
+                <div class="checkout-result_wrapper">
+                    <span class="catalog-top_title" style="margin-bottom: 11px;">Оформление заказа</span>
+                    <form action="#" class="checkout-body_form">
+                        <div class="checkout-body">
+                            <div class="checkout-body_top">
+                                
+                                <div>Вы выбрали<span> 4 </span>товара на общую сумму<span> 3 789,00 ₽</span></div>
+                            </div>
+                            <div class="checkout-data">
+                                <div class="checkout-data_title">
+                                    <span>1 / </span>Данные получателя
+                                </div>
+                                <input type="text" name="name" placeholder="Имя" required>
+                                <input type="tel" name="phone" placeholder="Телефон" required>
+                                <input type="email" name="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="checkout-delivery">
+                                <div class="checkout-data_title">
+                                    <span>2 / </span>Способ доставки
+                                </div>
+                                <div class="checkout-delivery_way">
+                                    <label class="delivery-card" style="max-width: 207px;">
+                                        <input type="radio" name="delivery">
+                                        <span class="delivery-card__info" style="position: relative; background: #fff; padding: 20px 0 24px;">
+                                            <span class="delivery-card__info-check"></span>
+                                            <span class="delivery-card__info-title">Самовывоз </span>
+                                            <span class="checkout-delivery_way-text">Точки самовывоза</span>
+                                        </span>
+                                    </label>
+                                    <label class="delivery-card" style="max-width: 207px;">
+                                        <input type="radio" name="delivery" checked>
+                                        <span class="delivery-card__info" style="position: relative; background: #fff; padding: 20px 0 24px;">
+                                        <span class="delivery-card__info-check"></span>
+                                            <span class="delivery-card__info-title">Доставка курьером</span>  
+                                            <span class="checkout-delivery_way-text">по городу Череповец</span>
+                                        </span>
+                                    </label>
+                                    <label class="delivery-card" style="max-width: 207px;">
+                                        <input type="radio" name="delivery">
+                                        <span class="delivery-card__info" style="position: relative; background: #fff; padding: 20px 0 24px;">
+                                        <span class="delivery-card__info-check"></span>
+                                            <span class="delivery-card__info-title">Доставка почтой</span>  
+                                            <span class="checkout-delivery_way-text">по всей России</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="checkout-data_title">
+                                    Данные доставки по Череповцу
+                                </div>
+                                <div class="checkout-data_adress">
+                                    <input type="text" name="street" placeholder="Улица" required>
+                                    <input type="tel" name="house" placeholder="Дом" required>
+                                    <input type="email" name="office" placeholder="Офис" required>
+                                </div>
+                                
+                            </div>
+                            <div class="checkout-payment">
+                                <div class="checkout-data_title">
+                                    <span>3 / </span>Способ оплаты
+                                </div>
+                                <div class="checkout-delivery_way">
+                                    <label class="delivery-card" style="max-width: 207px;">
+                                        <input type="radio" name="payment">
+                                        <span class="delivery-card__info" style="position: relative; background: #fff; padding: 20px 0 24px;">
+                                            <span class="delivery-card__info-check"></span>
+                                            <span class="delivery-card__info-title">Наличными</span>
+                                            <span class="checkout-delivery_way-text">без комиссии</span>
+                                        </span>
+                                    </label>
+                                    <label class="delivery-card" style="max-width: 207px;">
+                                        <input type="radio" name="payment" checked>
+                                        <span class="delivery-card__info" style="position: relative; background: #fff; padding: 20px 0 24px;">
+                                        <span class="delivery-card__info-check"></span>
+                                            <span class="delivery-card__info-title">Сбербанк Онлайн</span>  
+                                            <span class="checkout-delivery_way-text">без комиссии</span>
+                                        </span>
+                                    </label>
+                                    <label class="delivery-card" style="max-width: 207px;">
+                                        <input type="radio" name="payment">
+                                        <span class="delivery-card__info" style="position: relative;    background: #fff; padding: 20px 0 24px;">
+                                        <span class="delivery-card__info-check"></span>
+                                            <span class="delivery-card__info-title">Перевод</span>  
+                                            <span class="checkout-delivery_way-text">по реквезитам</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="checkout-data_title" style="margin-bottom: 35px;">
+                                    Переведите деньги через сбербанк Онлайн,<br>
+                                    после пришлите подтверждение оплаты
+                                </div>
+                                <div class="checkout-payment_info">  
+                                    <span>Перевод по номеру телефона :<span style="color: #72799C;"> +7 (915) 133 22 11 </span></span>
+                                    <span style="margin-bottom: 18px;">Перевод по номеру карты :<span style="color: #72799C;"> 4276 3800 0000 0001</span></span>
+                                    <span><span style="color: #72799C;">После оплаты, пожалуйста, пришлите подтверждение операции<br> на e-mail:</span> slavik@stromsnab.ru</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result-wrapper">
+                            <div class="result-top">
+                                <span>Ваши покупки</span>
+                                <div class="result-top_cards">
+                                    <div class="result-top_card">
+                                        <img src="img/basket-product.png" alt="">
+                                        <div class="result-top_card-title">
+                                            Эмаль NOVOCOLOR ПФ-115
+                                            <span>1 625<span></span>,00 ₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="result-top_card">
+                                        <img src="img/basket-product.png" alt="">
+                                        <div class="result-top_card-title">
+                                            Эмаль NOVOCOLOR ПФ-115
+                                            <span>1 625<span></span>,00 ₽</span>
+                                        </div>
+                                    </div>
+                                    <div class="result-top_card">
+                                        <img src="img/basket-product.png" alt="">
+                                        <div class="result-top_card-title">
+                                            Эмаль NOVOCOLOR ПФ-115
+                                            <span>1 625<span></span>,00 ₽</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="basket-catalog_card-price">
-                                <div class="basket-catalog_card-price_top">1 625<span>,00 ₽</span></div> 
-                                <img src="img/basket-in-stock.svg" alt="">
-                            </div>
-                            <button class="basket-catalog_card-delete"><img src="img/basket-delete.svg" alt=""></button>
-                        </div>
-                        <div class="basket-catalog_card">
-                            <img src="img/basket-product.png" alt="">
-                            <div class="basket-catalog_card-info">
-                                <span class="basket-catalog_card-info_title">Эмаль NOVOCOLOR ПФ-115</span>
-                                Код товара: 00020111990
-                                <div class="basket-catalog_card-info_parameters">
-                                    <span class="basket-catalog_card-info_parameters-weight">25 кг</span>
-                                    <span class="basket-catalog_card-info_parameters-color"></span>
-                                    <div class="basket-catalog_card-info_parameters-form">
-                                        <button class="js-quantity-minus">
-                                            <svg width="15" height="2" viewBox="0 0 15 2" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="15" width="2" height="15" transform="rotate(90 15 0)"/>
-                                            </svg>
-                                        </button>
-                                        <input type="text" name="quantity" value="1" class="js-quantity-input" readonly>
-                                        <button class="js-quantity-plus">
-                                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="15" y="7" width="2" height="15" transform="rotate(90 15 7)"/>
-                                                <rect x="8.5" y="15.5" width="2" height="15" transform="rotate(-180 8.5 15.5)"/>
-                                            </svg>
-                                        </button>
+                            <div class="result-body">
+                                <div class="result-body_lists">
+                                    <div class="result-body_list">
+                                        <span>Товары 3шт</span><span style="text-align: right; color: #191F3D;">5 060,00</span>
+                                    </div>
+                                    <div class="result-body_list">
+                                        <span>Доставки курьером</span><span style="text-align: right; color: #191F3D;">300,00</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="basket-catalog_card-price">
-                                <div class="basket-catalog_card-price_top">1 625<span>,00 ₽</span></div> 
-                                <img src="img/basket-in-stock.svg" alt="">
-                            </div>
-                            <button class="basket-catalog_card-delete"><img src="img/basket-delete.svg" alt=""></button>
-                        </div>
-                        <div class="basket-catalog_card">
-                            <img src="img/basket-product.png" alt="">
-                            <div class="basket-catalog_card-info">
-                                <span class="basket-catalog_card-info_title">Эмаль NOVOCOLOR ПФ-115</span>
-                                Код товара: 00020111990
-                                <div class="basket-catalog_card-info_parameters">
-                                    <span class="basket-catalog_card-info_parameters-weight">25 кг</span>
-                                    <span class="basket-catalog_card-info_parameters-color"></span>
-                                    <div class="basket-catalog_card-info_parameters-form">
-                                        <button class="js-quantity-minus">
-                                            <svg width="15" height="2" viewBox="0 0 15 2" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="15" width="2" height="15" transform="rotate(90 15 0)"/>
-                                            </svg>
-                                        </button>
-                                        <input type="text" name="quantity" value="1" class="js-quantity-input" readonly>
-                                        <button class="js-quantity-plus">
-                                            <svg width="15" height="16" viewBox="0 0 15 16" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="15" y="7" width="2" height="15" transform="rotate(90 15 7)"/>
-                                                <rect x="8.5" y="15.5" width="2" height="15" transform="rotate(-180 8.5 15.5)"/>
-                                            </svg>
-                                        </button>
-                                    </div>
+                                <div class="result-body_total">
+                                    <span>Итого:</span>
+                                    <span class="result-body_total-price">5 060<span>,00 ₽</span></span>
                                 </div>
+                                <button type="button" class="basket-info_button">Оплатить</button>
                             </div>
-                            <div class="basket-catalog_card-price">
-                                <div class="basket-catalog_card-price_top">1 625<span>,00 ₽</span></div> 
-                                <img src="img/basket-in-stock.svg" alt="">
-                            </div>
-                            <button class="basket-catalog_card-delete"><img src="img/basket-delete.svg" alt=""></button>
                         </div>
-                    </div>
-                    <div class="basket-info">
-                        <div class="basket-info_title">
-                            У вас в корзине<br>
-                            <span>3 товара,</span> весом<span> 52 кг</span>
-                        </div>
-                        <div class="basket-info_delivery">
-                            <label class="delivery-card">
-                                <input type="radio" name="delivery" checked>
-                                <span class="delivery-card__info">
-                                   <span class="delivery-card__info-check"></span>
-                                    <span class="delivery-card__info-title">Доставка</span>  
-                                </span>
-                            </label>
-                            <label class="delivery-card">
-                                <input type="radio" name="delivery">
-                                <span class="delivery-card__info">
-                                    <span class="delivery-card__info-check"></span>
-                                    <span class="delivery-card__info-title">Самовывоз </span>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="basket-info_price">
-                            Итого:
-                            <div class="basket-info_price-top">5 060<span>,00 ₽</span></div>
-                        </div>
-                        <a href="checkout.html"><button type="button" class="basket-info_button">Оформить заказ</button></a> 
-                    </div>
+                    </form>
                 </div>
-            </div>
-            <div class="advantages-wrapper">
-                <div class="container">
-                    <div class="advantages">
-                        <span>Наши преимущества</span> 
-                        <div class="advantages-cards">
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
@@ -311,38 +291,7 @@
                 </div>
             </div>
         </div>
-
     </div>
 
-    <script>
-        let buttonsMinus = document.querySelectorAll('.js-quantity-minus'),
-            buttonsPlus = document.querySelectorAll('.js-quantity-plus')
-
-        for (let button of buttonsMinus) {
-            button.addEventListener('click', function (event) {
-                changeQuantity(event, '-')
-            })
-        }
-        for (let button of buttonsPlus) {
-            button.addEventListener('click', function (event) {
-                changeQuantity(event, '+')
-            })
-        }
-        
-        function changeQuantity(event, type) {
-            let parent = event.currentTarget.parentNode,
-                input = parent.querySelector('.js-quantity-input')
-             
-            let quantity = parseInt(input.value)
-            
-            if (type === '+') {
-                quantity++
-            } else if (quantity != 1) {
-                quantity--
-            }
-
-            input.value = quantity
-        }
-    </script>
 </body>
 </html>
