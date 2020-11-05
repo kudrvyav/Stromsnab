@@ -1,0 +1,5 @@
+@media (max-width: 1200px) {
+    .table-top:last-child {
+        margin-right: 180px;
+    }
+}

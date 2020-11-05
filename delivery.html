@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корзина</title>
+    <title>Условия доставки</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -20,7 +21,7 @@
                             </span>
                             <div class="header-top_main">
                                 <a href="index.html">Главная</a>
-                                <a href="delivery.html">Доставка</a>
+                                <a href="delivery.html" class="active">Доставка</a>
                                 <a href="delivery.html">О компании</a>
                                 <a href="delivery.html">Оплата</a>
                                 <a href="delivery.html">Контакты</a>
@@ -142,187 +143,47 @@
                 <div class="nav">
                     <a href="index.html">Главная</a>
                     <img src="img/strelka.svg" alt="">
-                    <a href="basket.html" class="nav-active">Корзина</a>
+                    <a href="basket.html" class="nav-active">Доставка</a>
                 </div>
-                <div class="catalog-top catalog-top-catalog">
-                    <div class="catalog-top_title">
-                    Корзина –<span class="catalog-top_title-big"> 3</span><span class="catalog-top_title-small"> товара</span>
-                </div>
-                </div>
-                <div class="basket-wrapper">
-                    <div class="basket-catalog">
-                        <div class="basket-catalog_card">
-                            <div class="basket-catalog-img">
-                                <img src="img/basket-product.png" alt="">
-                            </div>
-                            <div class="basket-catalog-wrap">
-                               <div class="basket-catalog_card-info">
-                                    <span class="basket-catalog_card-info_title">Эмаль NOVOCOLOR ПФ-115</span>
-                                    Код товара: 00020111990
-                                    <div class="basket-catalog_card-info_parameters">
-                                        <span class="basket-catalog_card-info_parameters-weight">25 кг</span>
-                                        <span class="basket-catalog_card-info_parameters-color"></span>
-                                        <div class="basket-catalog_card-info_parameters-form">
-                                            <button class="js-quantity-minus">
-                                                <svg width="15" height="2" viewBox="0 0 15 2" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="15" width="2" height="15" transform="rotate(90 15 0)"/>
-                                                </svg>
-                                            </button>
-                                            <input type="text" name="quantity" value="1" class="js-quantity-input" readonly>
-                                            <button class="js-quantity-plus">
-                                                <svg width="15" height="16" viewBox="0 0 15 16" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="15" y="7" width="2" height="15" transform="rotate(90 15 7)"/>
-                                                    <rect x="8.5" y="15.5" width="2" height="15" transform="rotate(-180 8.5 15.5)"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="basket-catalog_card-price">
-                                    <div class="basket-catalog_card-price_top">1 625<span>,00 ₽</span></div> 
-                                    <img src="img/basket-in-stock.svg" alt="">
-                                </div> 
-                            </div>
-                            
-                            <button class="basket-catalog_card-delete"><img src="img/basket-delete.svg" alt=""></button>
-                        </div>
-                        <div class="basket-catalog_card">
-                            <div class="basket-catalog-img">
-                                <img src="img/basket-product.png" alt="">
-                            </div>
-                            <div class="basket-catalog-wrap">
-                               <div class="basket-catalog_card-info">
-                                    <span class="basket-catalog_card-info_title">Эмаль NOVOCOLOR ПФ-115</span>
-                                    Код товара: 00020111990
-                                    <div class="basket-catalog_card-info_parameters">
-                                        <span class="basket-catalog_card-info_parameters-weight">25 кг</span>
-                                        <span class="basket-catalog_card-info_parameters-color"></span>
-                                        <div class="basket-catalog_card-info_parameters-form">
-                                            <button class="js-quantity-minus">
-                                                <svg width="15" height="2" viewBox="0 0 15 2" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="15" width="2" height="15" transform="rotate(90 15 0)"/>
-                                                </svg>
-                                            </button>
-                                            <input type="text" name="quantity" value="1" class="js-quantity-input" readonly>
-                                            <button class="js-quantity-plus">
-                                                <svg width="15" height="16" viewBox="0 0 15 16" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="15" y="7" width="2" height="15" transform="rotate(90 15 7)"/>
-                                                    <rect x="8.5" y="15.5" width="2" height="15" transform="rotate(-180 8.5 15.5)"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="basket-catalog_card-price">
-                                    <div class="basket-catalog_card-price_top">1 625<span>,00 ₽</span></div> 
-                                    <img src="img/basket-in-stock.svg" alt="">
-                                </div> 
-                            </div>
-                            
-                            <button class="basket-catalog_card-delete"><img src="img/basket-delete.svg" alt=""></button>
-                        </div>
-                        <div class="basket-catalog_card">
-                            <div class="basket-catalog-img">
-                                <img src="img/basket-product.png" alt="">
-                            </div>
-                            <div class="basket-catalog-wrap">
-                               <div class="basket-catalog_card-info">
-                                    <span class="basket-catalog_card-info_title">Эмаль NOVOCOLOR ПФ-115</span>
-                                    Код товара: 00020111990
-                                    <div class="basket-catalog_card-info_parameters">
-                                        <span class="basket-catalog_card-info_parameters-weight">25 кг</span>
-                                        <span class="basket-catalog_card-info_parameters-color"></span>
-                                        <div class="basket-catalog_card-info_parameters-form">
-                                            <button class="js-quantity-minus">
-                                                <svg width="15" height="2" viewBox="0 0 15 2" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="15" width="2" height="15" transform="rotate(90 15 0)"/>
-                                                </svg>
-                                            </button>
-                                            <input type="text" name="quantity" value="1" class="js-quantity-input" readonly>
-                                            <button class="js-quantity-plus">
-                                                <svg width="15" height="16" viewBox="0 0 15 16" fill="#9DAADF" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="15" y="7" width="2" height="15" transform="rotate(90 15 7)"/>
-                                                    <rect x="8.5" y="15.5" width="2" height="15" transform="rotate(-180 8.5 15.5)"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="basket-catalog_card-price">
-                                    <div class="basket-catalog_card-price_top">1 625<span>,00 ₽</span></div> 
-                                    <img src="img/basket-in-stock.svg" alt="">
-                                </div> 
-                            </div>
-                            
-                            <button class="basket-catalog_card-delete"><img src="img/basket-delete.svg" alt=""></button>
-                        </div>
-                    </div>
-                    <div class="basket-info">
-                        <div class="basket-info_title">
-                            У вас в корзине<br>
-                            <span>3 товара,</span> весом<span> 52 кг</span>
-                        </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="container">
+                    <div class="main-container">
+                        <span class="main-top">Условия доставки</span>
+                        <span class="main-top_description">
+                            Мы доставляем заказы по всей России.<br>
+                            Выберите удобный для вас способ
+                        </span>
                         <div class="basket-info_delivery">
                             <label class="delivery-card">
-                                <input type="radio" name="delivery" checked>
-                                <span class="delivery-card__info">
-                                   <span class="delivery-card__info-check"></span>
-                                    <span class="delivery-card__info-title">Доставка</span>  
+                                <input type="radio" name="delivery">
+                                <span class="delivery-card__info main-delivery">
+                                    <span class="delivery-card__info-check"></span>
+                                    <span class="delivery-card__info-title">Доставка</span>
                                 </span>
                             </label>
                             <label class="delivery-card">
-                                <input type="radio" name="delivery">
-                                <span class="delivery-card__info">
+                                <input type="radio" name="delivery" checked="">
+                                <span class="delivery-card__info main-delivery">
                                     <span class="delivery-card__info-check"></span>
                                     <span class="delivery-card__info-title">Самовывоз </span>
                                 </span>
                             </label>
                         </div>
-                        <div class="basket-info_price">
-                            Итого:
-                            <div class="basket-info_price-top">5 060<span>,00 ₽</span></div>
-                        </div>
-                        <a href="checkout.html"><button type="button" class="basket-info_button">Оформить заказ</button></a> 
-                    </div>
-                </div>
-            </div>
-            <div class="advantages-wrapper">
-                <div class="container">
-                    <div class="advantages">
-                        <span>Наши преимущества</span> 
-                        <div class="advantages-cards">
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
+                        <div class="main-body">
+                            <span class="main-body_big">Вы можете забрать товар с нашего<br>склада бесплатно!</span>
+                            <span>Для этого оформите заказ и при оформлении укажите способ доставки: самовывоз.</span>
+                            <div class="main-body_address">
+                                <span style="color: #1230DA;">Адрес склада:</span><span> Вологодская обл. г.Череповец
+                                    ул.Краснодонцев дом 3Г, офис № 27</span>
                             </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
-                            </div>
-                            <div class="advantages-cards_item">
-                                <div><img src="img/advantages.svg" alt=""></div>
-                                <span class="advantages-cards_item-title">Опыт</span>
-                                Работаем с 2006 года на строительном рынке
+                            <div class="main-map">
+                                <script type="text/javascript" charset="utf-8" async
+                                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A75474cdcc4c5dfb8c4d62254e30b5664dd3a9ce22366940cc81c2cd959d0a81a&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -402,43 +263,27 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script>
         $(document).ready(function () {
-          
+            
+            // hover
+            $(document).on('mouseover', '.js-menu-item', function () {
+                let menuItem = $(this)
+                    menuSection = menuItem.data('menu')
+
+                $('.js-menu-item').removeClass('active')
+                menuItem.addClass('active')
+
+                $('.js-menu-section').removeClass('active')
+                $('.js-menu-section[data-section=' + menuSection + ']').addClass('active')
+            })
+
             $(document).on('click', '.js-button-menu', function () {
                 $('.js-catalog-popup').toggleClass('active')
                 $('.js-header').toggleClass('header-home')
                 $('.js-background').toggleClass('active')
             })
-          
-        })
-
-        let buttonsMinus = document.querySelectorAll('.js-quantity-minus'),
-            buttonsPlus = document.querySelectorAll('.js-quantity-plus')
-
-        for (let button of buttonsMinus) {
-            button.addEventListener('click', function (event) {
-                changeQuantity(event, '-')
-            })
-        }
-        for (let button of buttonsPlus) {
-            button.addEventListener('click', function (event) {
-                changeQuantity(event, '+')
-            })
-        }
-        
-        function changeQuantity(event, type) {
-            let parent = event.currentTarget.parentNode,
-                input = parent.querySelector('.js-quantity-input')
-             
-            let quantity = parseInt(input.value)
             
-            if (type === '+') {
-                quantity++
-            } else if (quantity != 1) {
-                quantity--
-            }
-
-            input.value = quantity
-        }
+        })
     </script>
 </body>
+
 </html>
